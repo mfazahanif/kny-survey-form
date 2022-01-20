@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;700&family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      90deg,
+      rgba(46, 24, 11, 0.7) 0%,
+      rgba(133, 94, 47, 0.7) 50%,
+      rgba(46, 24, 11, 0.7) 100%
+    ),
+    url(bg.png);
+  background-size: cover;
+
+  z-index: -1;
+}
+
+body {
+  font-family: poppins, sans-serif;
+  color: #fff;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background-color: rgba(245, 226, 204, 0.6);
+  border-radius: 15px;
+}
+
+input,
+textarea {
+  border: none;
+}
+
+/* label,
+input,
+input [type="text"],
+input [type="email"],
+input [type="number"],
+select {
+  display: block;
+} */
+
+label {
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+  color: rgba(46, 24, 11, 1);
+  display: block;
+}
+
+/* input, */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  margin-top: 10px;
+  padding-left: 10px;
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  font-family: inherit;
+  /* display: block; */
+}
+
+/* input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+} */
+
+.hashira .char {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+
+/* textarea {
+  width: 100%;
+  border-radius: 15px;
+  font-family: inherit;
+  padding-left: 10px;
+  position: relative;
+} */
+
+button {
+  width: 100%;
+  height: 40px;
+  margin: 20px 0 20px 0;
+  background-color: #a66f3f;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  display: block;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+
+button:hover {
+  background-color: #502e11;
+  transition: ease 0.3s;
+}

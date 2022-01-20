@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimetsu No Yaiba Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Kimetsu No Yaiba Survey Form</h1>
+    <p id="description">Fill the form, I want to know your opinion about this anime :D</p>
+
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">
+            Name:
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </label>
+        <label for="email" id="email-label">
+            Email:
+            <input type="email" id="email" placeholder="yourname@example.com" required>
+        </label>
+        <label for="number" id="number-label">
+            Age:
+            <input type="number" id="number" placeholder="Enter your age" min="13" max="60">
+        </label>
+        <label for="dropdown" id="dropdown-label" required>
+            How do you know Kimetsu No Yaiba?
+            <select name="" id="dropdown">
+                <option disabled selected value>Select the option below</option>
+                <option value="">Social Media</option>
+                <option value="">Friends</option>
+                <option value="">Others</option>
+            </select>
+        </label>
+        <label for="hashira" id="hashira-label">
+            Who is the strongest hashira by your opinion? <br><br>
+            <input type="radio" name="hashira" value="1" class="hashira" checked> Tomioka Giyu <br>
+            <input type="radio" name="hashira" value="2" class="hashira"> Rengoku Kyojuro <br>
+            <input type="radio" name="hashira" value="3" class="hashira"> Sanemi Shinazugawa <br>
+            <input type="radio" name="hashira" value="4" class="hashira"> Shinobu Kocho <br>
+            <input type="radio" name="hashira" value="5" class="hashira"> Obanai Iguro <br>
+            <input type="radio" name="hashira" value="6" class="hashira"> Gyomei Himejima <br>
+            <input type="radio" name="hashira" value="7" class="hashira"> Muichiro Tokito <br>
+            <input type="radio" name="hashira" value="8" class="hashira"> Mitsuri Kanroji <br>
+            <input type="radio" name="hashira" value="9" class="hashira"> Uzui Tengen <br>
+        </label>
+        <label for="char" id="char-label">
+            Who is your favorite character in Kimetsu No Yaiba?<br><br>
+            <input type="checkbox" name="char" value="tanjiro" class="char">Tanjiro<br>
+            <input type="checkbox" name="char" value="nezuko" class="char">Nezuko<br>
+            <input type="checkbox" name="char" value="zenitsu" class="char">Zenitsu<br>
+            <input type="checkbox" name="char" value="inosuke" class="char">Inosuke<br>
+            <input type="checkbox" name="char" value="kanao" class="char">Kanao<br>
+            <input type="checkbox" name="char" value="giyu" class="char">Giyu<br>
+            <input type="checkbox" name="char" value="shinobu" class="char">Shinobu<br>
+            <input type="checkbox" name="char" value="sanemi" class="char">Sanemi<br>
+            <input type="checkbox" name="char" value="urokodaki" class="char">Urokodaki<br>
+            <input type="checkbox" name="char" value="kagaya" class="char">Kagaya<br>
+            <input type="checkbox" name="char" value="muzan" class="char">Muzan<br>
+            <input type="checkbox" name="char" value="daki" class="char">Daki<br>
+            <input type="checkbox" name="char" value="gyutaro" class="char">Gyutaro<br>
+            <input type="checkbox" name="char" value="rui" class="char">Rui<br>
+            <input type="checkbox" name="char" value="tamayo" class="char">Tamayo<br>
+            <input type="checkbox" name="char" value="yushiro" class="char">Yushiro<br>
+            <input type="checkbox" name="char" value="uzui" class="char">Uzui<br>
+            <input type="checkbox" name="char" value="rengoku" class="char">Rengoku<br>
+            <input type="checkbox" name="char" value="akaza" class="char">Akaza<br>
+            <input type="checkbox" name="char" value="enmu" class="char">Enmu<br>
+        </label>
+        <label for="textarea">
+            How is your experience about this anime?
+            <textarea name="textarea" placeholder="Share your experience here" cols="30" rows="10"></textarea>
+        </label>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
